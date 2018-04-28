@@ -5,12 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Library.Models;
 
-namespace Library.Controllers
+namespace Library.Repository
 {
-    interface IBookController
+    interface ICustomerRepository
     {
-        bool AddNewBook(Book book);
-        bool EditBook(int id);
-
+        bool SaveCustomer(Customer customer);
     }
 }

@@ -27,7 +27,10 @@ namespace Library
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            CustomerView customerView = new CustomerView();
+            this.Hide();
+            customerView.ShowDialog();
+            this.Show();
         }
 
         private void btnSearchBook_Click(object sender, EventArgs e)

@@ -17,6 +17,7 @@ namespace Library.Models
         public int BookShell{ get; set; }
         public int RowNo{ get; set; }
         public int ColumnNo{ get; set; }
+        public bool IsAvailable { get; set; }
 
     }
 }

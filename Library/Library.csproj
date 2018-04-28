@@ -51,17 +51,21 @@
     <Compile Include="Controllers\IBookController.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Views\AddNewBook.cs">
+    <Compile Include="Repository\BookRepository.cs" />
+    <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="Repository\IBookRepository.cs" />
+    <Compile Include="Repository\ICustomerRepository.cs" />
+    <Compile Include="Views\AddNewBookView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\AddNewBook.Designer.cs">
-      <DependentUpon>AddNewBook.cs</DependentUpon>
+    <Compile Include="Views\AddNewBookView.Designer.cs">
+      <DependentUpon>AddNewBookView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\Customer.cs">
+    <Compile Include="Views\CustomerView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Customer.Designer.cs">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <Compile Include="Views\CustomerView.Designer.cs">
+      <DependentUpon>CustomerView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Library.cs">
       <SubType>Form</SubType>
@@ -83,11 +87,11 @@
     <Compile Include="Views\ShowAllBooks.Designer.cs">
       <DependentUpon>ShowAllBooks.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\AddNewBook.resx">
-      <DependentUpon>AddNewBook.cs</DependentUpon>
+    <EmbeddedResource Include="Views\AddNewBookView.resx">
+      <DependentUpon>AddNewBookView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\Customer.resx">
-      <DependentUpon>Customer.cs</DependentUpon>
+    <EmbeddedResource Include="Views\CustomerView.resx">
+      <DependentUpon>CustomerView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Library.resx">
       <DependentUpon>Library.cs</DependentUpon>

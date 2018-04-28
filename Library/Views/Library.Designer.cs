@@ -1,4 +1,6 @@
-﻿namespace Library
+﻿using Library.Controllers;
+
+namespace Library
 {
     partial class Library
     {
@@ -132,7 +134,6 @@
         private System.Windows.Forms.Button btnRegisteCustomer;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
-
         
 
     }
