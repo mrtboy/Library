@@ -34,15 +34,15 @@ namespace Library
             this.btnSearchBook = new System.Windows.Forms.Button();
             this.btnShowAllBooks = new System.Windows.Forms.Button();
             this.btnRegisteCustomer = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAddNewBook
             // 
             this.btnAddNewBook.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnAddNewBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewBook.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddNewBook.Location = new System.Drawing.Point(116, 47);
+            this.btnAddNewBook.Location = new System.Drawing.Point(252, 181);
             this.btnAddNewBook.Name = "btnAddNewBook";
             this.btnAddNewBook.Size = new System.Drawing.Size(126, 110);
             this.btnAddNewBook.TabIndex = 0;
@@ -53,8 +53,9 @@ namespace Library
             // btnSearchBook
             // 
             this.btnSearchBook.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnSearchBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchBook.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSearchBook.Location = new System.Drawing.Point(324, 47);
+            this.btnSearchBook.Location = new System.Drawing.Point(414, 181);
             this.btnSearchBook.Name = "btnSearchBook";
             this.btnSearchBook.Size = new System.Drawing.Size(126, 110);
             this.btnSearchBook.TabIndex = 1;
@@ -65,8 +66,9 @@ namespace Library
             // btnShowAllBooks
             // 
             this.btnShowAllBooks.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnShowAllBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAllBooks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnShowAllBooks.Location = new System.Drawing.Point(547, 47);
+            this.btnShowAllBooks.Location = new System.Drawing.Point(591, 181);
             this.btnShowAllBooks.Name = "btnShowAllBooks";
             this.btnShowAllBooks.Size = new System.Drawing.Size(126, 110);
             this.btnShowAllBooks.TabIndex = 2;
@@ -77,8 +79,9 @@ namespace Library
             // btnRegisteCustomer
             // 
             this.btnRegisteCustomer.BackColor = System.Drawing.SystemColors.Highlight;
+            this.btnRegisteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegisteCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegisteCustomer.Location = new System.Drawing.Point(116, 233);
+            this.btnRegisteCustomer.Location = new System.Drawing.Point(79, 181);
             this.btnRegisteCustomer.Name = "btnRegisteCustomer";
             this.btnRegisteCustomer.Size = new System.Drawing.Size(126, 110);
             this.btnRegisteCustomer.TabIndex = 3;
@@ -86,27 +89,16 @@ namespace Library
             this.btnRegisteCustomer.UseVisualStyleBackColor = false;
             this.btnRegisteCustomer.Click += new System.EventHandler(this.button4_Click);
             // 
-            // button5
+            // label1
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(324, 233);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(126, 110);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.SystemColors.Highlight;
-            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(547, 233);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(126, 110);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = false;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(146, 103);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 31);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Public Bookstore";
             // 
             // Library
             // 
@@ -114,8 +106,7 @@ namespace Library
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegisteCustomer);
             this.Controls.Add(this.btnShowAllBooks);
             this.Controls.Add(this.btnSearchBook);
@@ -123,6 +114,7 @@ namespace Library
             this.Name = "Library";
             this.Text = "Library";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -132,10 +124,7 @@ namespace Library
         private System.Windows.Forms.Button btnSearchBook;
         private System.Windows.Forms.Button btnShowAllBooks;
         private System.Windows.Forms.Button btnRegisteCustomer;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        
-
+        private System.Windows.Forms.Label label1;
     }
 }
 

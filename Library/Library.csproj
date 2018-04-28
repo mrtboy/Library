@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -49,12 +50,18 @@
     <Compile Include="Controllers\CustomerController.cs" />
     <Compile Include="Controllers\ICustomerController.cs" />
     <Compile Include="Controllers\IBookController.cs" />
+    <Compile Include="Controllers\IBorrowController.cs" />
+    <Compile Include="Controllers\BorrowController.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Borrow.cs" />
     <Compile Include="Repository\BookRepository.cs" />
     <Compile Include="Repository\CustomerRepository.cs" />
+    <Compile Include="Repository\DbConnection.cs" />
     <Compile Include="Repository\IBookRepository.cs" />
     <Compile Include="Repository\ICustomerRepository.cs" />
+    <Compile Include="Repository\IBorrowRepository.cs" />
+    <Compile Include="Repository\BorrowRepository.cs" />
     <Compile Include="Views\AddNewBookView.cs">
       <SubType>Form</SubType>
     </Compile>

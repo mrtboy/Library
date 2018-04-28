@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library.Models;
 
+
 namespace Library.Repository
 {
     class CustomerRepository : ICustomerRepository
@@ -12,7 +13,9 @@ namespace Library.Repository
         public bool SaveCustomer(Customer customer)
         {
             try{
-                return true;
+                string query = "INSERT INTO Customer(Customer_Name) VALUES('" + customer.Name + "')";
+                DbConnection db = DbConnection.createConnection();
+                return db.createQuery(query);
             }
             catch (Exception e)
             {

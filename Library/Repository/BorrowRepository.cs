@@ -3,19 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Library.Models;
-using Library.Repository;
 
-namespace Library.Controllers
+namespace Library.Repository
 {
-    class BookController : IBookController
+    class BorrowRepository : IBorrowRepository
     {
-        public bool AddNewBook(Book book)
+        public bool borrowBook(int book_id, int customer_id)
         {
             throw new NotImplementedException();
         }
 
-        public bool EditBook(int id)
+        public bool returnBook(int book_id)
         {
             throw new NotImplementedException();
         }

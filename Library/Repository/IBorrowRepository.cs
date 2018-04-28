@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Library.Repository
 {
-    interface IBookRepository
+    interface IBorrowRepository
     {
-        bool SaveBook(int id);
-        bool DeleteBook(int id);
-        bool EditBook();
-        bool RentBook();
+        bool borrowBook(int book_id,int customer_id);
+        bool returnBook(int book_id);
     }
 }
