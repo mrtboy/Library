@@ -77,6 +77,7 @@
             this.gridSearch.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridSearch.Location = new System.Drawing.Point(12, 128);
             this.gridSearch.Name = "gridSearch";
+            this.gridSearch.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.gridSearch.Size = new System.Drawing.Size(921, 393);
             this.gridSearch.TabIndex = 3;
             // 
