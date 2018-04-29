@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Data;
 
 namespace Library.Repository
 {
@@ -41,6 +42,31 @@ namespace Library.Repository
                 con.Close();
                 return false;
             }
+        }
+        public DataSet ExecuteQuery(string query)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand(query, con);
+
+            DataSet ds = new DataSet();
+            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+
+            adp.Fill(ds);
+
+            return ds;
+            /*   int i = cmd.ExecuteNonQuery();
+               if (i != 0)
+               {
+                   con.Close();
+                   return true;
+               }
+               else
+               {
+                   con.Close();
+                   return false;
+               }*/
         }
     }
 }

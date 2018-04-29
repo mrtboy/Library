@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Library.Models;
 using Library.Repository;
+using System.Data;
 
 namespace Library.Controllers
 {
@@ -21,5 +22,11 @@ namespace Library.Controllers
         {
             throw new NotImplementedException();
         }
+        public DataSet ShowBooks()
+        {
+            repo = new BookRepository();
+            return repo.GetBooks();
+        }
+
     }
 }

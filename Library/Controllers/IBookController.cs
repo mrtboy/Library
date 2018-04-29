@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,6 @@ namespace Library.Controllers
     {
         bool AddNewBook(Book book);
         bool EditBook(int id);
-
+        DataSet ShowBooks();
     }
 }

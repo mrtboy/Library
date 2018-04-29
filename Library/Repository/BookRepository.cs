@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Library.Models;
+using System.Data;
 
 namespace Library.Repository
 {
@@ -37,6 +38,21 @@ namespace Library.Repository
             }catch(Exception e)
             {
                 return false;
+            }
+        }
+
+        public DataSet GetBooks()
+        {
+            try
+            {
+                DbConnection db = DbConnection.createConnection();
+                string query = "select * from Book";
+                   
+                return db.ExecuteQuery(query);
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
     }
