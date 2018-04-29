@@ -38,17 +38,22 @@ namespace Library.Views
         private void btnSave_Click(object sender, EventArgs e)
         {
             BorrowController = new BorrowController();
+            try
+            {
+                int CId = Convert.ToInt32(cmbbox_Book.Text);
+                int BId = Convert.ToInt32(cmbbox_member.Text);
+                bool result = BorrowController.borrowBook(CId, BId, DateTime.Now, DateTime.Now);
+                if (result)
+                {
+                    lblMessage.Text = String.Format("The Book is borrowd.");
+                }
+                else
+                {
+                    lblMessage.Text = "Failed";
+                }
+            }catch(Exception)
+            {
 
-            int CId = Convert.ToInt32(cmbbox_Book.Text);
-            int BId = Convert.ToInt32(cmbbox_member.Text);
-            bool result = BorrowController.borrowBook(CId,BId,DateTime.Now,DateTime.Now);
-            if (result)
-            {
-                lblMessage.Text = String.Format("The Book is borrowd.");
-            }
-            else
-            {
-               lblMessage.Text = "Failed";
             }
         } 
     }

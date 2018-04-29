@@ -43,10 +43,9 @@ namespace Library
             this.btnAddNewBook.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnAddNewBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddNewBook.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddNewBook.Location = new System.Drawing.Point(313, 223);
-            this.btnAddNewBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddNewBook.Location = new System.Drawing.Point(235, 181);
             this.btnAddNewBook.Name = "btnAddNewBook";
-            this.btnAddNewBook.Size = new System.Drawing.Size(168, 135);
+            this.btnAddNewBook.Size = new System.Drawing.Size(126, 110);
             this.btnAddNewBook.TabIndex = 0;
             this.btnAddNewBook.Text = "Add New Book";
             this.btnAddNewBook.UseVisualStyleBackColor = false;
@@ -57,10 +56,9 @@ namespace Library
             this.btnShowAllBooks.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnShowAllBooks.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnShowAllBooks.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnShowAllBooks.Location = new System.Drawing.Point(743, 223);
-            this.btnShowAllBooks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnShowAllBooks.Location = new System.Drawing.Point(557, 181);
             this.btnShowAllBooks.Name = "btnShowAllBooks";
-            this.btnShowAllBooks.Size = new System.Drawing.Size(168, 135);
+            this.btnShowAllBooks.Size = new System.Drawing.Size(126, 110);
             this.btnShowAllBooks.TabIndex = 2;
             this.btnShowAllBooks.Text = "Show All Books";
             this.btnShowAllBooks.UseVisualStyleBackColor = false;
@@ -71,10 +69,9 @@ namespace Library
             this.btnRegisteCustomer.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnRegisteCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegisteCustomer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegisteCustomer.Location = new System.Drawing.Point(105, 223);
-            this.btnRegisteCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegisteCustomer.Location = new System.Drawing.Point(79, 181);
             this.btnRegisteCustomer.Name = "btnRegisteCustomer";
-            this.btnRegisteCustomer.Size = new System.Drawing.Size(168, 135);
+            this.btnRegisteCustomer.Size = new System.Drawing.Size(126, 110);
             this.btnRegisteCustomer.TabIndex = 3;
             this.btnRegisteCustomer.Text = "Register customer";
             this.btnRegisteCustomer.UseVisualStyleBackColor = false;
@@ -85,10 +82,9 @@ namespace Library
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(195, 127);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(146, 103);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(273, 39);
+            this.label1.Size = new System.Drawing.Size(218, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Public Bookstore";
             // 
@@ -97,23 +93,22 @@ namespace Library
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(957, 223);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(718, 181);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(168, 135);
+            this.button1.Size = new System.Drawing.Size(126, 110);
             this.button1.TabIndex = 5;
             this.button1.Text = "Search Book";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btn_Borrow
             // 
             this.btn_Borrow.BackColor = System.Drawing.SystemColors.Highlight;
             this.btn_Borrow.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Borrow.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Borrow.Location = new System.Drawing.Point(528, 223);
-            this.btn_Borrow.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Borrow.Location = new System.Drawing.Point(396, 181);
             this.btn_Borrow.Name = "btn_Borrow";
-            this.btn_Borrow.Size = new System.Drawing.Size(168, 135);
+            this.btn_Borrow.Size = new System.Drawing.Size(126, 110);
             this.btn_Borrow.TabIndex = 6;
             this.btn_Borrow.Text = "Borrow Book";
             this.btn_Borrow.UseVisualStyleBackColor = false;
@@ -121,17 +116,16 @@ namespace Library
             // 
             // Library
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1260, 554);
+            this.ClientSize = new System.Drawing.Size(945, 450);
             this.Controls.Add(this.btn_Borrow);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRegisteCustomer);
             this.Controls.Add(this.btnShowAllBooks);
             this.Controls.Add(this.btnAddNewBook);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Library";
             this.Text = "Library";
             this.ResumeLayout(false);

@@ -17,15 +17,6 @@ namespace Library.Repository
             return db.createQuery(query);
         }
 
-        public bool EditBook()
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool RentBook()
-        {
-            throw new NotImplementedException();
-        }
 
         public bool SaveBook(Book book)
         {

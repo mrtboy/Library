@@ -57,5 +57,13 @@ namespace Library
             showAllbooks.ShowDialog();
             this.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SearchBook showAllbooks = new SearchBook();
+            this.Hide();
+            showAllbooks.ShowDialog();
+            this.Show();
+        }
     }
 }

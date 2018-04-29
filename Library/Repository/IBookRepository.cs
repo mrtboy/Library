@@ -12,8 +12,6 @@ namespace Library.Repository
     {
         bool SaveBook(Book book);
         bool DeleteBook(int id);
-        bool EditBook();
-        bool RentBook();
         DataSet GetBooks();
         DataSet FindBook(string bookName);
     }
