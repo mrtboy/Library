@@ -11,15 +11,10 @@ namespace Library.Controllers
     class CustomerController : ICustomerController
     {
         ICustomerRepository customerRepository;
-        Customer newCustomer;
-        public bool AddNewCustomer(string name, string address)
+        public bool AddNewCustomer(Customer customer)
         {
-            newCustomer = new Customer();
-            newCustomer.Name = name;
-            newCustomer.Address = address;
             customerRepository = new CustomerRepository();
-            
-            return customerRepository.SaveCustomer(newCustomer);
+            return customerRepository.SaveCustomer(customer);
         }
 
         public bool RemoveCustomer(int id)

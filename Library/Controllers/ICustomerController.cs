@@ -10,7 +10,7 @@ namespace Library.Controllers
 {
     interface ICustomerController
     {
-        bool AddNewCustomer(string name, string address);
+        bool AddNewCustomer(Customer customer);
         bool RemoveCustomer(int id);
     }
 }

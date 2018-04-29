@@ -24,12 +24,21 @@ namespace Library
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            customer = new Customer();
+            customer.Name = txtName.Text;
+            customer.Email = txtEmail.Text;
+            customer.Phone = txtPhone.Text;
+            customer.Address = txtAddress.Text;
             customerController = new CustomerController();
-            bool result = customerController.AddNewCustomer(txtName.Text, txtAddress.Text);
+            bool result = customerController.AddNewCustomer(customer);
 
             if (result)
             {
                 lblMessage.Text = "Seccessful";
+            }
+            else
+            {
+                lblAddress.Text = "Failed";
             }
         }
     }

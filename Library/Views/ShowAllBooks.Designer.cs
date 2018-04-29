@@ -53,15 +53,5 @@
         #endregion
         private System.Windows.Forms.BindingSource publicLibraryDataSetBindingSource;
         private System.Windows.Forms.BindingSource bookBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bIdDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bIsbnDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bAuthorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bPublisherDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bEditionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bBookShellDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bRowNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn bColumnNoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn bIsAvailableDataGridViewCheckBoxColumn;
     }
 }

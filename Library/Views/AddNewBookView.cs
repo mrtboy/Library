@@ -20,11 +20,6 @@ namespace Library
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             Book newBook = new Book();
@@ -38,7 +33,34 @@ namespace Library
             newBook.ColumnNo = Convert.ToInt16(txtColumnNo.Text);
 
             bookController = new BookController();
-            bookController.AddNewBook(newBook);
+            bool result = bookController.AddNewBook(newBook);
+            if(result)
+            {
+                lblMessage.Text = String.Format("The Book {0} is added to library.", newBook.Name);
+            }
+            else
+            {
+                lblMessage.Text = "Failed";
+            }
+
+            clearTexts();
+        }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            clearTexts();
+        }
+
+        void clearTexts()
+        {
+            txtName.Text = "";
+            txtIsbn.Text = "";
+            txtAuthor.Text = "";
+            txtPublisher.Text = "";
+            txtEdition.Text = "";
+            txtBookShell.Text = "";
+            txtRowNo.Text = "";
+            txtColumnNo.Text = "";
         }
     }
 }

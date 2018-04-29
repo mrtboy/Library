@@ -85,7 +85,7 @@ namespace Library
             this.btnRegisteCustomer.Name = "btnRegisteCustomer";
             this.btnRegisteCustomer.Size = new System.Drawing.Size(126, 110);
             this.btnRegisteCustomer.TabIndex = 3;
-            this.btnRegisteCustomer.Text = "Register Costumer";
+            this.btnRegisteCustomer.Text = "Register customer";
             this.btnRegisteCustomer.UseVisualStyleBackColor = false;
             this.btnRegisteCustomer.Click += new System.EventHandler(this.button4_Click);
             // 

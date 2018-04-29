@@ -46,8 +46,8 @@
             this.lblColumnNo = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
             this.gbAddNewBook = new System.Windows.Forms.GroupBox();
+            this.lblMessage = new System.Windows.Forms.Label();
             this.gbAddNewBook.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -183,7 +183,7 @@
             // 
             this.btnSave.BackColor = System.Drawing.SystemColors.Highlight;
             this.btnSave.ForeColor = System.Drawing.SystemColors.HighlightText;
-            this.btnSave.Location = new System.Drawing.Point(122, 273);
+            this.btnSave.Location = new System.Drawing.Point(123, 273);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(98, 35);
             this.btnSave.TabIndex = 16;
@@ -194,26 +194,17 @@
             // btnReset
             // 
             this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnReset.Location = new System.Drawing.Point(316, 273);
+            this.btnReset.Location = new System.Drawing.Point(468, 273);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(99, 35);
             this.btnReset.TabIndex = 17;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.BackColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(506, 273);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(101, 35);
-            this.btnCancel.TabIndex = 18;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // gbAddNewBook
             // 
-            this.gbAddNewBook.Controls.Add(this.btnCancel);
+            this.gbAddNewBook.Controls.Add(this.lblMessage);
             this.gbAddNewBook.Controls.Add(this.btnReset);
             this.gbAddNewBook.Controls.Add(this.btnSave);
             this.gbAddNewBook.Controls.Add(this.lblColumnNo);
@@ -240,7 +231,15 @@
             this.gbAddNewBook.TabIndex = 0;
             this.gbAddNewBook.TabStop = false;
             this.gbAddNewBook.Text = "New Book";
-            this.gbAddNewBook.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMessage.Location = new System.Drawing.Point(221, 329);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(0, 17);
+            this.lblMessage.TabIndex = 18;
             // 
             // AddNewBook
             // 
@@ -277,7 +276,7 @@
         private System.Windows.Forms.Label lblColumnNo;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnReset;
-        private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox gbAddNewBook;
+        private System.Windows.Forms.Label lblMessage;
     }
 }
