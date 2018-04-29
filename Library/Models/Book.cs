@@ -8,13 +8,6 @@ namespace Library.Models
 {
     class Book
     {
-        //string id;
-
-        //public string Id
-        //{
-        //    get { return id; }
-        //    set { id = Guid.NewGuid().ToString(); }
-        //}
         public int Id { get; set; }
         public string Name { get; set; }
         public string Isbn { get; set; }
@@ -24,7 +17,13 @@ namespace Library.Models
         public string BookShell{ get; set; }
         public int RowNo{ get; set; }
         public int ColumnNo{ get; set; }
-        public bool IsAvailable { get; set; }
+        private bool isAvailable;
+
+        public bool IsAvailable
+        {
+            get { return isAvailable; }
+            set { isAvailable = true; }
+        }
 
         public Book(string name, string isbn, string author, string publisher, int edition,
             string bookshell, int rowNo, int columnNo)

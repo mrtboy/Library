@@ -18,7 +18,7 @@ namespace Library.Repository
                 DbConnection db = DbConnection.createConnection();
                 return db.createQuery(query);
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return false;
             }

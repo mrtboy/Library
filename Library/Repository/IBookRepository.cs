@@ -15,5 +15,6 @@ namespace Library.Repository
         bool EditBook();
         bool RentBook();
         DataSet GetBooks();
+        DataSet FindBook(string bookName);
     }
 }

@@ -45,28 +45,25 @@ namespace Library.Repository
         }
         public DataSet ExecuteQuery(string query)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
-            SqlConnection con = new SqlConnection(connectionString);
-            con.Open();
-            SqlCommand cmd = new SqlCommand(query, con);
+            try
+            {
+                string connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
 
-            DataSet ds = new DataSet();
-            SqlDataAdapter adp = new SqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                SqlDataAdapter adp = new SqlDataAdapter(cmd);
 
-            adp.Fill(ds);
+                adp.Fill(ds);
 
-            return ds;
-            /*   int i = cmd.ExecuteNonQuery();
-               if (i != 0)
-               {
-                   con.Close();
-                   return true;
-               }
-               else
-               {
-                   con.Close();
-                   return false;
-               }*/
+                con.Close();
+                return ds;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
         }
     }
 }

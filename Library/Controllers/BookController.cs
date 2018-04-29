@@ -22,10 +22,17 @@ namespace Library.Controllers
         {
             throw new NotImplementedException();
         }
+
         public DataSet ShowBooks()
         {
             repo = new BookRepository();
             return repo.GetBooks();
+        }
+
+        public DataSet SearchBook(string bookName)
+        {
+            repo = new BookRepository();
+            return repo.FindBook(bookName);
         }
 
     }

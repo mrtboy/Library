@@ -13,5 +13,6 @@ namespace Library.Controllers
         bool AddNewBook(Book book);
         bool EditBook(int id);
         DataSet ShowBooks();
+        DataSet SearchBook(string bookName);
     }
 }

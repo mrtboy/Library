@@ -32,10 +32,10 @@ namespace Library.Repository
             try
             {
                 DbConnection db = DbConnection.createConnection();
-                string query = String.Format("INSERT INTO Book(B_Name, B_Isbn, B_Author, B_Publisher, B_Edition, B_BookShell, B_RowNo, B_ColumnNo) VALUES('{0}','{1}','{2}','{3}',{4},'{5}',{6},{7})",
-                    book.Name, book.Isbn, book.Author, book.Publisher, book.Edition, book.BookShell, book.RowNo, book.ColumnNo);
+                string query = String.Format("INSERT INTO Book(B_Name, B_Isbn, B_Author, B_Publisher, B_Edition, B_BookShell, B_RowNo, B_ColumnNo, B_IsAvailable) VALUES('{0}','{1}','{2}','{3}',{4},'{5}',{6},{7}, {8})",
+                    book.Name, book.Isbn, book.Author, book.Publisher, book.Edition, book.BookShell, book.RowNo, book.ColumnNo, 1);
                 return db.createQuery(query);
-            }catch(Exception e)
+            }catch(Exception)
             {
                 return false;
             }
@@ -48,6 +48,21 @@ namespace Library.Repository
                 DbConnection db = DbConnection.createConnection();
                 string query = "select * from Book";
                    
+                return db.ExecuteQuery(query);
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        public DataSet FindBook(string bookName)
+        {
+            try
+            {
+                DbConnection db = DbConnection.createConnection();
+                string query = String.Format("select * from Book WHERE B_Name LIKE '{0}%'", bookName);
+
                 return db.ExecuteQuery(query);
             }
             catch (Exception)
