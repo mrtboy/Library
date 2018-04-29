@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtTitle = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.btnBookShell = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtAuthor = new System.Windows.Forms.TextBox();
+            this.txtIsbn = new System.Windows.Forms.TextBox();
+            this.txtPublisher = new System.Windows.Forms.TextBox();
+            this.txtEdition = new System.Windows.Forms.TextBox();
+            this.txtBookShell = new System.Windows.Forms.TextBox();
             this.txtRowNo = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtColumnNo = new System.Windows.Forms.TextBox();
             this.lblBookName = new System.Windows.Forms.Label();
             this.lblAuthor = new System.Windows.Forms.Label();
             this.lblIsbn = new System.Windows.Forms.Label();
@@ -51,47 +51,47 @@
             this.gbAddNewBook.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtTitle
+            // txtName
             // 
-            this.txtTitle.Location = new System.Drawing.Point(122, 28);
-            this.txtTitle.Name = "txtTitle";
-            this.txtTitle.Size = new System.Drawing.Size(226, 29);
-            this.txtTitle.TabIndex = 0;
+            this.txtName.Location = new System.Drawing.Point(122, 28);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(226, 29);
+            this.txtName.TabIndex = 0;
             // 
-            // textBox1
+            // txtAuthor
             // 
-            this.textBox1.Location = new System.Drawing.Point(123, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(226, 29);
-            this.textBox1.TabIndex = 1;
+            this.txtAuthor.Location = new System.Drawing.Point(123, 73);
+            this.txtAuthor.Name = "txtAuthor";
+            this.txtAuthor.Size = new System.Drawing.Size(226, 29);
+            this.txtAuthor.TabIndex = 1;
             // 
-            // textBox2
+            // txtIsbn
             // 
-            this.textBox2.Location = new System.Drawing.Point(122, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(226, 29);
-            this.textBox2.TabIndex = 2;
+            this.txtIsbn.Location = new System.Drawing.Point(122, 120);
+            this.txtIsbn.Name = "txtIsbn";
+            this.txtIsbn.Size = new System.Drawing.Size(226, 29);
+            this.txtIsbn.TabIndex = 2;
             // 
-            // textBox3
+            // txtPublisher
             // 
-            this.textBox3.Location = new System.Drawing.Point(122, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(226, 29);
-            this.textBox3.TabIndex = 3;
+            this.txtPublisher.Location = new System.Drawing.Point(122, 167);
+            this.txtPublisher.Name = "txtPublisher";
+            this.txtPublisher.Size = new System.Drawing.Size(226, 29);
+            this.txtPublisher.TabIndex = 3;
             // 
-            // textBox4
+            // txtEdition
             // 
-            this.textBox4.Location = new System.Drawing.Point(468, 28);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(226, 29);
-            this.textBox4.TabIndex = 4;
+            this.txtEdition.Location = new System.Drawing.Point(468, 28);
+            this.txtEdition.Name = "txtEdition";
+            this.txtEdition.Size = new System.Drawing.Size(226, 29);
+            this.txtEdition.TabIndex = 4;
             // 
-            // btnBookShell
+            // txtBookShell
             // 
-            this.btnBookShell.Location = new System.Drawing.Point(468, 73);
-            this.btnBookShell.Name = "btnBookShell";
-            this.btnBookShell.Size = new System.Drawing.Size(226, 29);
-            this.btnBookShell.TabIndex = 5;
+            this.txtBookShell.Location = new System.Drawing.Point(468, 73);
+            this.txtBookShell.Name = "txtBookShell";
+            this.txtBookShell.Size = new System.Drawing.Size(226, 29);
+            this.txtBookShell.TabIndex = 5;
             // 
             // txtRowNo
             // 
@@ -100,12 +100,12 @@
             this.txtRowNo.Size = new System.Drawing.Size(226, 29);
             this.txtRowNo.TabIndex = 6;
             // 
-            // textBox7
+            // txtColumnNo
             // 
-            this.textBox7.Location = new System.Drawing.Point(468, 169);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(226, 29);
-            this.textBox7.TabIndex = 7;
+            this.txtColumnNo.Location = new System.Drawing.Point(468, 169);
+            this.txtColumnNo.Name = "txtColumnNo";
+            this.txtColumnNo.Size = new System.Drawing.Size(226, 29);
+            this.txtColumnNo.TabIndex = 7;
             // 
             // lblBookName
             // 
@@ -189,6 +189,7 @@
             this.btnSave.TabIndex = 16;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnReset
             // 
@@ -223,14 +224,14 @@
             this.gbAddNewBook.Controls.Add(this.lblIsbn);
             this.gbAddNewBook.Controls.Add(this.lblAuthor);
             this.gbAddNewBook.Controls.Add(this.lblBookName);
-            this.gbAddNewBook.Controls.Add(this.textBox7);
+            this.gbAddNewBook.Controls.Add(this.txtColumnNo);
             this.gbAddNewBook.Controls.Add(this.txtRowNo);
-            this.gbAddNewBook.Controls.Add(this.btnBookShell);
-            this.gbAddNewBook.Controls.Add(this.textBox4);
-            this.gbAddNewBook.Controls.Add(this.textBox3);
-            this.gbAddNewBook.Controls.Add(this.textBox2);
-            this.gbAddNewBook.Controls.Add(this.textBox1);
-            this.gbAddNewBook.Controls.Add(this.txtTitle);
+            this.gbAddNewBook.Controls.Add(this.txtBookShell);
+            this.gbAddNewBook.Controls.Add(this.txtEdition);
+            this.gbAddNewBook.Controls.Add(this.txtPublisher);
+            this.gbAddNewBook.Controls.Add(this.txtIsbn);
+            this.gbAddNewBook.Controls.Add(this.txtAuthor);
+            this.gbAddNewBook.Controls.Add(this.txtName);
             this.gbAddNewBook.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbAddNewBook.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.gbAddNewBook.Location = new System.Drawing.Point(42, 42);
@@ -258,14 +259,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtTitle;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox btnBookShell;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtAuthor;
+        private System.Windows.Forms.TextBox txtIsbn;
+        private System.Windows.Forms.TextBox txtPublisher;
+        private System.Windows.Forms.TextBox txtEdition;
+        private System.Windows.Forms.TextBox txtBookShell;
         private System.Windows.Forms.TextBox txtRowNo;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtColumnNo;
         private System.Windows.Forms.Label lblBookName;
         private System.Windows.Forms.Label lblAuthor;
         private System.Windows.Forms.Label lblIsbn;

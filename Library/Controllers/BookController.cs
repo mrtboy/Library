@@ -10,9 +10,11 @@ namespace Library.Controllers
 {
     class BookController : IBookController
     {
+        IBookRepository repo;
         public bool AddNewBook(Book book)
         {
-            throw new NotImplementedException();
+            repo = new BookRepository();
+            return repo.SaveBook(book);
         }
 
         public bool EditBook(int id)
