@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -44,6 +45,14 @@ namespace Library
         private void btnShowAllBooks_Click(object sender, EventArgs e)
         {
             ShowAllBooks showAllbooks = new ShowAllBooks();
+            this.Hide();
+            showAllbooks.ShowDialog();
+            this.Show();
+        }
+
+        private void btn_Borrow_Click(object sender, EventArgs e)
+        {
+            BorrowBook showAllbooks = new BorrowBook();
             this.Hide();
             showAllbooks.ShowDialog();
             this.Show();
